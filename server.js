@@ -10,10 +10,10 @@ var serverPort = 8080;
 var server = http.createServer(app);
 
 //set the template engine ejs
-app.set("view engine", "ejs");
+// app.set("view engine", "ejs");
 
 //middlewares
-app.use(express.static("public"));
+app.use("/static",express.static("public"));
 
 //routes
 app.get("/", (req, res) => {
