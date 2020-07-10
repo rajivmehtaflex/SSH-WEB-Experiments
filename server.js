@@ -13,12 +13,12 @@ var server = http.createServer(app);
 // app.set("view engine", "ejs");
 
 //middlewares
-app.use("/static",express.static("public"));
+app.use("/",express.static("public"));
 
 //routes
-app.get("/", (req, res) => {
-  res.render("index");
-});
+// app.get("/", (req, res) => {
+//   res.render("index");
+// });
 
 server.listen(serverPort,()=>{
   console.log("server is running...")
