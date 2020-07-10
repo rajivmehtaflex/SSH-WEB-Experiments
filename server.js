@@ -70,10 +70,10 @@ io.on("connection", function(socket) {
       );
     })
     .connect({
-      host: "167.71.239.25",
-      port: "22", // Generally 22 but some server have diffrent port for security Reson
-      username: "root", // user name
-      // password: "root@123" // Set password or use PrivateKey
-      privateKey: require("fs").readFileSync("/home/rajiv/Desktop/ssh-client-connection-1.0.0/desktop.pem") // <---- Uncomment this if you want to use privateKey ( Example : AWS )
+      host: "localhost",
+      port: "2222", // Generally 22 but some server have diffrent port for security Reson
+      username: "vagrant", // user name
+      password: "vagrant" // Set password or use PrivateKey
+      // privateKey: require("fs").readFileSync("/home/rajiv/Desktop/ssh-client-connection-1.0.0/desktop.pem") // <---- Uncomment this if you want to use privateKey ( Example : AWS )
     });
 });
